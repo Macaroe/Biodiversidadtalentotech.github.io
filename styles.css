@@ -1,0 +1,1639 @@
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Serif);
+
+
+body {
+	background: #fff;
+	font-size: 22px;
+	line-height: 32px;
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+	word-wrap: break-word !important;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	font-size: 30px;
+	text-align: center;
+	color: #FFF;
+	margin-top: 100px;
+	font-size: 40px;
+	line-height: 70px;
+	font-family: 'Bree Serif', 'serif';
+}
+
+h3 {
+	font-size: 30px;
+	line-height: 34px;
+	text-align: center;
+	color: #0e0d0d;
+}
+
+h3 a {
+	color: #FFF;
+}
+
+a {
+	color: #FFF;
+}
+
+i {
+	color: #000;
+}
+
+h2 {
+	color: #000;
+}
+
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+.namenu {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+	background-color: #000;
+}
+
+#logo {
+	display: block;
+	padding: 0 30px;
+	float: left;
+	font-size: 20px;
+	line-height: 60px;
+}
+
+nav:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+nav ul {
+	float: right;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+}
+
+
+nav ul li {
+	margin: 0px;
+	display: inline-block;
+	float: left;
+	background-color: #317a3b;
+	position: relative;
+}
+
+
+nav a {
+	display: block;
+	padding: 14px 20px;
+	color: #FFF;
+	font-size: 17px;
+	text-decoration: none;
+}
+
+nav ul li ul li:hover {
+	background: #000000;
+}
+
+nav a:hover {
+	background-color: #000000;
+}
+
+nav ul ul {
+	display: none;
+	position: absolute;
+	top: 60px; /
+}
+
+nav ul li:hover > ul {
+	display: inherit;
+}
+
+nav ul ul li {
+	width: 170px;
+	float: none;
+	display: list-item;
+	position: relative;
+}
+
+nav ul ul ul li {
+	position: relative;
+	top: -60px;
+	right: 170px; /* has to be the same number as the "width" of "nav ul ul li" */
+}
+
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after {
+	content: ' +';
+}
+
+li > a:only-child:after {
+	content: '';
+}
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width: 768px) {
+	#logo {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+
+	.namenu {
+		width: 100%;
+		position: relative;
+		top: auto;
+		bottom: 0;
+	}
+
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+	.toggle {
+		display: block;
+		background-color:#1b6381;
+		padding: 14px 20px;
+		color: #FFF;
+		font-size: 17px;
+		text-decoration: none;
+		border: none;
+	}
+
+	.toggle:hover {
+		background-color: #000000;
+	}
+
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	nav ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+	nav ul ul ul a {
+		background-color: #000000;
+	}
+
+	nav ul li ul li .toggle,
+	nav ul ul a,
+	nav ul ul ul a {
+		padding: 14px 20px;
+		color: #FFF;
+		font-size: 17px;
+	}
+
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #212121;
+	}
+
+	nav ul ul {
+		float: none;
+		position: static;
+		color: #ffffff;
+	}
+
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+	}
+}
+
+@media all and (max-width: 330px) {
+	nav ul li {
+		display: block;
+		width: 94%;
+	}
+}
+
+  
+/* Estilos del slider */
+.slider-container {
+  position: relative;
+  max-width: 1800px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+
+.slider {
+  display: flex;
+  width: 100%; 
+  transition: transform 0.5s ease;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #aaa;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.slider-btn i {
+  color: #fff; 
+  font-size: 24px; 
+}
+
+.h2-contenedor {
+	font-size: 30px;
+	text-align: center;
+	color: #FFF;
+	margin-top: 100px;
+	font-size: 40px;
+	line-height: 70px;
+	font-family: 'Bree Serif', 'serif';
+}
+  
+  
+  /* Media Queries para ajustes responsivos */
+  @media (max-width: 768px) {
+    .contenedor-cedula {
+      width: 95%; 
+      padding: 15px; 
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .contenedor-cedula {
+      padding: 10px; 
+    }
+    .caja3p {
+      padding: 20px; 
+    }
+  }
+  
+  /* Estilos para imágenes dentro de contenedores */
+.card__image-holder img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Estilos para contenedor de imagen que utiliza flexbox */
+  .card__image-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilos para contenedores con imágenes de fondo */
+  .front, .back {
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Estilos para tarjetas (cards) */
+div.cards {
+    margin: 40px auto;
+    max-width: 500px;
+    text-align: center;
+  }
+  div.card {
+    background: #ffffff;
+    display: inline-block;
+    margin: 8px;
+    max-width: 80%; 
+  
+    box-sizing: border-box; 
+    padding: 10px; 
+    text-align: left;
+    transition: all 0.3s 0s ease-in;
+  }
+  
+  @media (max-width: 480px) {
+    div.card {
+      width: 70%; /* Mostrar una tarjeta por fila en pantallas muy pequeñas */
+      margin: 8px 0; /* Ajustar el margen para que las tarjetas ocupen todo el ancho */
+    }
+  }
+  
+  .parrafoparamos p {
+    font-size: 25px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  
+  @media (max-width: 768px) {
+    .parrafoparamos p {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .parrafoparamos p {
+      font-size: 14px;
+    }
+    
+    .parrafoparamos {
+      padding: 12px;
+    }
+  }
+  
+  .p-paramos{
+    font-size: 28px;
+    padding: 45px;
+    text-align: justify;
+    padding-bottom: 20px;
+
+
+} 
+
+   p {
+    font-size: 20px;
+    color: #000;
+   }
+
+.h2_paramos1 h2 {
+    font-size: 50px; /* Tamaño de fuente */
+    line-height: 1.5; /* Altura de línea */
+    text-align: center; /* Alineación de texto justificado */
+  }
+  
+  /* Media query para ajustar los estilos en pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .h2_paramos1 h2 {
+      font-size: 20px; /* Reducción del tamaño de fuente en pantallas más pequeñas */
+    }
+  }
+  
+  /* Media query adicional para pantallas más pequeñas */
+  @media (max-width: 480px) {
+    .h2_paramos1 h2 {
+      font-size: 14px; /* Reducción adicional del tamaño de fuente */
+    }
+  }
+  
+ 
+  
+  /*tarjetas despleglables*/
+/* Estilos para el botón */
+a.btn {
+  background: #0096a0;
+  border-radius: 4px;
+  box-shadow: 0 2px 0px 0 rgba(0,0,0,0.25);
+  color: #ffffff;
+  display: inline-block;
+  padding: 6px 30px 8px;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.1s 0s ease-out;
+}
+
+.no-touch a.btn:hover {
+  background: #33cccc;
+  box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
+  transform: translateY(-2px);
+  transition: all 0.25s 0s ease-out;
+}
+
+.no-touch a.btn:active,
+a.btn:active {
+  background: #007c85;
+  box-shadow: 0 1px 0px 0 rgba(255,255,255,0.25);
+  transform: translate3d(0,1px,0);
+  transition: all 0.025s 0s ease-out;
+}
+
+/* Estilos para la tarjeta desplegable */
+div.card {
+  background: #ffffff;
+  display: inline-block;
+  margin: 8px;
+  max-width: 400px;
+  perspective: 1000;
+  position: relative;
+  text-align: left;
+  transition: all 0.3s 0s ease-in;
+  width: 800px; /* Tamaño grande por defecto */
+  z-index: 1;
+}
+
+div.card img {
+  max-width: 100%;
+  background-image: url(img/1.png);
+}
+
+div.card .card-title {
+  background: #ffffff;
+  padding: 6px 15px 10px;
+  position: relative;
+  z-index: 0;
+}
+
+div.card .card-title a.toggle-info {
+  border-radius: 32px;
+  height: 32px;
+  padding: 0;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 32px;
+}
+
+div.card .card-title a.toggle-info span {
+  background: #ffffff;
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 16px;
+  transition: all 0.15s 0s ease-out;
+  width: 12px;
+}
+
+div.card .card-title a.toggle-info span.left {
+  right: 14px;
+  transform: rotate(45deg);
+}
+
+div.card .card-title a.toggle-info span.right {
+  left: 14px;
+  transform: rotate(-45deg);
+}
+
+div.card .card-title h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.05em;
+  margin: 0;
+  padding: 0;
+}
+
+div.card .card-title h2 small {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+div.card .card-description {
+  padding: 0 15px 10px;
+  position: relative;
+  font-size: 14px;
+  color: #333;
+}
+
+div.card .card-actions {
+  box-shadow: 0 2px 0px 0 rgba(0,0,0,0.075);
+  padding: 10px 15px 20px;
+  text-align: center;
+}
+
+div.card .card-flap {
+  background: #f2f2f2;
+  position: absolute;
+  width: 100%;
+  transform-origin: top;
+  transform: rotateX(-90deg);
+}
+
+div.card .flap1 {
+  transition: all 0.3s 0.3s ease-out;
+  z-index: -1;
+}
+
+div.card .flap2 {
+  transition: all 0.3s 0s ease-out;
+  z-index: -2;
+}
+
+div.cards.showing div.card {
+  cursor: pointer;
+  opacity: 0.6;
+  transform: scale(0.88);
+}
+
+.no-touch div.cards.showing div.card:hover {
+  opacity: 0.94;
+  transform: scale(0.92);
+}
+
+div.card.show {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
+
+div.card.show .card-title a.toggle-info {
+  background: #ff6666 !important;
+}
+
+div.card.show .card-title a.toggle-info span {
+  top: 15px;
+}
+
+div.card.show .card-title a.toggle-info span.left {
+  right: 10px;
+}
+
+div.card.show .card-title a.toggle-info span.right {
+  left: 10px;
+}
+
+div.card.show .card-flap {
+  background: #ffffff;
+  transform: rotateX(0deg);
+}
+
+div.card.show .flap1 {
+  transition: all 0.3s 0s ease-out;
+}
+
+div.card.show .flap2 {
+  transition: all 0.3s 0.2s ease-out;
+}
+
+/* Media Query para pantallas grandes */
+@media screen and (min-width: 868px) {
+  div.card {
+      width: 100%; /* Ancho completo en pantallas grandes */
+      max-width: 800px; /* Puedes ajustar este valor según tu diseño */
+  }
+}
+
+
+@media screen and (min-width: 768px) { /* Ajuste para pantallas grandes */
+  .contenedor-cedula3 {
+      max-width: 800px; /* Tamaño máximo del contenedor */
+      margin: 0 auto; /* Centrar el contenedor en pantallas grandes */
+  }
+}
+
+/* Estilos para la tarjeta flip */
+
+.flip {
+    perspective: 1000px;
+    width: 600px; 
+    height: 400px; 
+
+  }
+  
+  .flip > .front,
+  .flip > .back {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; 
+    transition: transform 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 2%; 
+  }
+  
+  .flip > .front {
+    transform: rotateY(0deg);
+  }
+  
+  .flip > .back {
+    transform: rotateY(180deg); 
+  }
+  
+  .flip:hover > .front {
+    transform: rotateY(-180deg); 
+  }
+  
+  .flip:hover > .back {
+    transform: rotateY(0deg);
+  }
+  
+  /* Estilos para el contenido dentro de las caras de la tarjeta */
+  .flip > .front,
+  .flip > .back > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media (max-width: 768px) {
+    .flip {
+      width: 300px;
+      height: 191px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .flip {
+      width: 250px;
+      height: 159px;
+    }
+  }
+  
+  /* Otros estilos para el contenido específico */
+  .parrafoparamos {
+    padding: 20px;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  /*página de  inicio*/
+  .container-inicio {
+    width: 100%; /* Usaremos el 80% del ancho disponible */
+    max-width: 1800px; /* Ancho máximo para el contenedor */
+    margin: 50px auto; /* Centrar el contenedor en la pantalla */
+    height: 80%; /* Usaremos el 80% de la altura visible de la ventana */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  
+  #container1 {
+    background-image: url('img/paramos.png');
+    background-size: cover;
+  }
+  
+  #container2 {
+    background-image: url('img/ranita.png');
+    background-size: cover;
+  }
+  
+  .content {
+    padding: 40px; /* Mayor relleno para el contenido */
+    background-color: rgba(0, 0, 0, 0.3); /* Fondo semitransparente */
+    border-radius: 15px; /* Bordes redondeados */
+  }
+  
+  h1 {
+    font-size: 3em; /* Tamaño grande para el título */
+  }
+  
+  p {
+    font-size: 1.5em; /* Tamaño grande para el texto */
+    margin-bottom: 30px; /* Mayor espacio inferior */
+  }
+  
+             /* Estilos para los botones */
+             .botones {
+              display: flex;
+              justify-content: flex-end; /* Alinear los botones a la derecha */
+              align-items: center;
+              max-width: 80%;
+              padding: 20px;
+              background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente */
+              border-radius: 10px;
+          }
+  
+          .botones a {
+              display: inline-block;
+              padding: 10px 20px;
+              text-decoration: none;
+              color: #333;
+              font-weight: bold;
+              border: 2px solid #333;
+              border-radius: 5px;
+              transition: all 0.3s ease;
+          }
+  
+          .botones a:hover {
+              background-color: #333;
+              color: #fff;
+          }
+  
+          /* Estilos para hacer responsive */
+          @media (max-width: 768px) {
+              .botones {
+                  flex-direction: column;
+                  text-align: center;
+                  justify-content: center; /* Centrar botones en dispositivos móviles */
+              }
+              .botones a {
+                  margin-bottom: 10px;
+              }
+          }
+  
+  /* Estilos para hacer responsive */
+  @media (max-width: 768px) {
+    .btn {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center; /* Centrar botones en dispositivos móviles */
+    }
+    .btn a {
+        margin-bottom: 10px;
+    }
+  }
+
+  
+/*Galerias- Grid*/
+.container {
+    max-width: 900px;
+    margin: 5% auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+  
+  }
+  
+  .text-center {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 40px;
+  }
+  
+  .lightbox-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  
+  .lightbox-gallery div > img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  .lightbox-gallery div {
+    margin: 10px;
+    flex-basis: 180px;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .lightbox-gallery {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .lightbox > div {
+      margin-bottom: 10px;
+    }
+  }
+  
+  /*Lighbox CSS*/
+  
+  .lightbox {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    padding-top: 30px;
+    box-sizing: border-box;
+  }
+  
+  .lightbox img {
+    display: block;
+    margin: auto;
+  }
+  
+  .lightbox .caption {
+    margin: 15px auto;
+    width: 50%;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #eee;
+  }
+
+  /*estilos paramos boyacá*/
+.video {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción 16:9 para video responsivo */
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .video iframe, .video object, .video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  
+  /*estilos de la  página de fauna */
+  
+  #lightbox-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 999;
+    overflow: auto;
+  }
+  
+  #lightbox-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #lightbox-content img {
+    max-width: 90%;
+    max-height: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  
+
+  
+
+
+
+
+  /*footer*/
+
+  footer {
+    background-color: #333; /* Color de fondo del footer */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espacio alrededor del contenido dentro del footer */
+    text-align: center; /* Alineación del texto al centro */
+  }
+  
+  .osofooter img{
+    width: 300px;
+    height: 300px;
+  }
+  /* Estilos para los iconos */
+  .footer-icons img {
+    width: 30px; /* Ancho de los iconos */
+    height: 30px; /* Altura de los iconos */
+    margin: 0 10px; /* Espacio entre los iconos */
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas */
+    footer .footer-logo img {
+        max-width: 150px; /* Reducir el tamaño del logo para pantallas más pequeñas */
+    }
+  
+    .footer {
+        padding: 20px 10px; /* Reducir el relleno del footer en pantallas más pequeñas */
+    }
+  
+    .footer-left,
+    .footer-right {
+        width: 100%; 
+        text-align: center; 
+        margin-bottom: 20px; /
+    }
+  }
+  
+
+
+
+/*Galerias- Grid*/
+.container {
+  max-width: 800px;
+  margin: 5% auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+
+}
+
+.text-center {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 40px;
+}
+
+.lightbox-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.lightbox-gallery div > img {
+  max-width: 100%;
+  display: block;
+}
+
+.lightbox-gallery div {
+  margin: 10px;
+  flex-basis: 180px;
+}
+
+@media only screen and (max-width: 480px) {
+  .lightbox-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lightbox > div {
+    margin-bottom: 10px;
+  }
+}
+
+/*Lighbox CSS*/
+
+.lightbox {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+.lightbox img {
+  display: block;
+  margin: auto;
+}
+
+.lightbox .caption {
+  margin: 15px auto;
+  width: 50%;
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #eee;
+}
+
+
+/* Estilos para tarjetas (cards) */
+div.cards {
+  margin: 40px auto;
+  max-width: 500px;
+  text-align: center;
+}
+div.card {
+  background: #ffffff;
+  display: inline-block;
+  margin: 8px;
+  max-width: 80%; /* Ajustar el ancho máximo al 100% */
+  /* Ajustar el ancho de la tarjeta para mostrar dos por fila */
+  box-sizing: border-box; /* Incluir el padding y border en el ancho */
+  padding: 10px; /* Añadir un espacio interno adecuado */
+  text-align: left;
+  transition: all 0.3s 0s ease-in;
+}
+
+@media (max-width: 480px) {
+  div.card {
+    width: 70%; /* Mostrar una tarjeta por fila en pantallas muy pequeñas */
+    margin: 8px 0; /* Ajustar el margen para que las tarjetas ocupen todo el ancho */
+  }
+}
+
+.parrafoparamos p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .parrafoparamos p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .parrafoparamos p {
+    font-size: 14px;
+  }
+  
+  .parrafoparamos {
+    padding: 12px;
+  }
+}
+ 
+
+
+
+/* Estilos para Lightbox */
+#lightbox-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 999;
+  overflow: auto;
+}
+
+#lightbox-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#lightbox-content img {
+  max-width: 90%;
+  max-height: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+    
+
+.container {
+  max-width: 800px;
+  margin: 5% auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+
+}
+
+.text-center {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 40px;
+}
+
+.lightbox-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.lightbox-gallery div > img {
+  max-width: 100%;
+  display: block;
+}
+
+.lightbox-gallery div {
+  margin: 10px;
+  flex-basis: 180px;
+}
+
+@media only screen and (max-width: 480px) {
+  .lightbox-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lightbox > div {
+    margin-bottom: 10px;
+  }
+}
+
+/*Lighbox CSS*/
+
+.lightbox {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+.lightbox img {
+  display: block;
+  margin: auto;
+}
+
+.lightbox .caption {
+  margin: 15px auto;
+  width: 50%;
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #eee;
+}
+
+
+/* Estilos generales */
+
+
+.container-paramo {
+  margin-top: 20px;
+}
+
+/* Estilos para dispositivos pequeños (móviles) */
+@media (max-width: 600px) {
+  .h2-paramos h2 {
+    font-size: 24px;
+  }
+
+  .card__image {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-description {
+    font-size: 14px;
+  }
+}
+
+/* Estilos para dispositivos medianos y grandes (tabletas y escritorios) */
+@media (min-width: 601px) {
+  .h2-paramos h2 {
+    font-size: 36px;
+  }
+
+ 
+ }
+
+
+
+ 
+/*estilos h2 encabezados en el documento*/
+
+
+
+
+.h2-paramos{
+  font-size: 38px;
+  padding: 40px;
+  text-align: center;
+
+
+}  
+.h2-paramos1{
+  font-size: 50px;
+  padding: 40px;
+  text-align: center;
+  color: #f2f2f2;
+
+
+}
+.h2-paramos3{
+  font-size: 35px;
+  padding: 40px;
+  text-align: center;
+  color: #f2f2f2;
+
+
+}  
+ /*estilos parrafos*/
+
+
+.parrafo-paramos{ 
+    width: 30%;
+    padding: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:25px ;
+    text-align:justify;
+    margin-left: 20px;
+    margin-right: 20px;   
+}
+
+
+
+
+/*estilos de la  imagen con zoom*/
+
+.contenedor {
+  display: flex;
+  margin: auto;
+  width: 100%; /* Cambiamos el ancho del contenedor a 100% */
+  height: 100%; /* Establecemos la altura del contenedor al 100% de la altura de la ventana */
+}
+
+
+
+.grid-item{
+  width: 230px;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+ justify-items: center;
+}
+.grid-item:hover {
+  transform: scale(1.1); /* Efecto de escala al hacer hover */
+  cursor: pointer;
+}
+/*galeria2*/
+.grid-container-inicio2{
+  display:grid;
+  grid-template-columns: repeat(auto-fill,230px);
+  gap:70px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+padding-bottom: 50px;
+padding-left: 70px;
+background-color:#DBAC73;
+
+
+}
+
+
+
+/* Estilos para Lightbox */
+#lightbox-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 999;
+  overflow: auto;
+}
+
+#lightbox-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#lightbox-content img {
+  max-width: 90%;
+  max-height: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+/*POR MIRAR*/
+
+
+
+.container {
+  max-width: 800px;
+  margin: 5% auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+
+}
+
+.text-center {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 40px;
+}
+
+.lightbox-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.lightbox-gallery div > img {
+  max-width: 100%;
+  display: block;
+}
+
+.lightbox-gallery div {
+  margin: 10px;
+  flex-basis: 180px;
+}
+
+@media only screen and (max-width: 480px) {
+  .lightbox-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lightbox > div {
+    margin-bottom: 10px;
+  }
+}
+
+/*Lighbox CSS*/
+
+.lightbox {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+.lightbox img {
+  display: block;
+  margin: auto;
+}
+
+.lightbox .caption {
+  margin: 15px auto;
+  width: 50%;
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #eee;
+}
+
+
+
+/* galeria Fancybox*/
+
+.gallery a {
+  display: inline-block;
+  margin: 10px;
+  width: 200px; /* Ancho máximo de la imagen */
+  height: auto; /* Mantener la altura automática para conservar la proporción */
+}
+
+.gallery img {
+  width: 100%; /* Ajustar el ancho al contenedor (max-width: 200px) */
+  height: auto; /* Mantener la altura automática para conservar la proporción */
+  border-radius: 5px; /* Opcional: agregar bordes redondeados a las imágenes */
+}
+
+#map {
+  width: 100%; /* Puedes ajustar el ancho según tus necesidades */
+  height: 400px; /* Puedes ajustar la altura según tus necesidades */
+}
+
+
+
+
+
+
+.red {
+  position: fixed;
+  top: 50%; /* Centrar verticalmente */
+  left: 0;
+  transform: translateY(-50%); /* Centrar verticalmente */
+  z-index: 900;
+  background: #fff; /* Color de fondo del menú */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+  padding: 20px; /* Espacio interno */
+}
+
+.red ul {
+  list-style: none; 
+  padding: 0;
+}
+
+.red li {
+  margin-bottom: 10px; 
+}
+
+.red a {
+  display: block; 
+  padding: 10px; 
+  color: #000; 
+  text-decoration: none;
+  transition: all 0.3s ease; 
+  border-radius: 0 10px 10px 0; 
+}
+
+.red a:hover {
+  background: #000; 
+  color: #fff;  
+  padding-left: 30px; 
+}
+/* estilo  de  section de  humedales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.humedales-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.humedales-item i {
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.humedales-item h3 {
+  margin: 0 0 15px 0; 
+  font-size: 20px;
+}
+
+.humedales-item p {
+  margin: 0;
+  font-size: 16px;
+  text-align: justify;
+  padding: 20px;
+}
+
+/* Efecto hover */
+.humedales-item:hover {
+  background-color:#BFBFBF;
+  transition: background-color 0.3s ease;
+}
+
+.mapa-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%; /* Proporción 16:9 */
+  position: relative;
+  height: 0;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    margin: 30px auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .humedales-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .humedales-item i {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  /* Reducir el tamaño del texto en pantallas más pequeñas */
+  .humedales-item h3 {
+    font-size: 18px;
+  }
+
+  .humedales-item p {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+.mapa-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+
+
+/* Estilos para pantallas pequeñas */
+.section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilos para el contenedor interno */
+.container {
+  max-width: 800px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+
+
+
+.container {
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.enlace {
+  margin-top: 10px;
+}
+
+.enlace b {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.enlace a {
+  color: blue;
+  text-decoration: underline;
+}
+
+
+.p-inicio{
+  color: #eee;
+  font-size: 20px;
+}
+
+.footer-p{
+  color: #eee;
+  font-size: 15px;
+}
+
+
+
+
+

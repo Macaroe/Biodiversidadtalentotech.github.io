@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Esta es una página donde se habla de biodiversidad de Cundinamarca y Boyacá">
+    <title>Fauna de Cundinamarca</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="probando.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <nav class="namenu">
+        <div id="logo">Biodiversidad</div>
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <label for="drop-1" class="toggle">Boyacá</label>
+                <a href="#">Boyacá</a>
+                <input type="checkbox" id="drop-1"/>
+                <ul>
+                    <li><a href="paramosb.html">Páramo</a></li>
+                    <li><a href="faunab.html">Fauna</a></li>
+                    <li><a href="florab.html">Flora</a></li>
+                    <li><a href="mapa2.html">Mapa</a></li>
+                </ul>
+            </li>
+            <li>
+                <label for="drop-2" class="toggle">Cundinamarca</label>
+                <a href="#">Cundinamarca</a>
+                <input type="checkbox" id="drop-2"/>
+                <ul>
+                    <li><a href="paramosc.html">Páramo</a></li>
+                    <li><a href="faunac.html">Fauna</a></li>
+                    <li><a href="florac.html">Flora</a></li>
+                    <li><a href="mapa.html">Mapa</a></li>
+                </ul>
+            </li>
+            <li><a href="referencias.html">Referencias</a></li>
+            <li><a href="Mapai.html">Interactivo</a></li>
+        </ul>
+    </nav>
+    <div class="slider-container">
+        <div class="slider">
+            <img src="slider/imagen/1.jpg" alt="Image 1">
+            <img src="slider/imagen/2.jpg" alt="Image 2">
+            <img src="slider/imagen/3.jpg" alt="Image 3">
+            <img src="slider/imagen/4.jpg" alt="Image 4">
+        </div>
+        <div class="slider-controls"></div>
+        <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <section class="image-content">
+        <div class="image-container">
+            <img src="img/especies.png" alt="Biodiversidad">
+
+        </div>
+    </section>
+    <div class="sectionw">
+        <div class="image">
+            <img src="img/info.png" alt="o">
+            
+        </div>
+        <div class="text">
+            <h3>Fauna de  cundinamarca</h3>
+
+            <div class="highlight">
+                
+                <p>La fauna de Cundinamarca es igualmente diversa y variada, gracias a la gran variedad de ecosistemas presentes en este departamento de Colombia.</p>
+            </div>
+            <h3 class="texto3">Diversidad</h3>
+            <p>Algunas de las especies más representativas de la fauna cundinamarquesa incluyen aves como el cóndor andino, águila arpía, tucán, colibrí, carpintero, entre otros.</p>
+           
+        </div>
+        </div>
+   
+  
+        <div class="paramo-section">
+            <h2>Biodiversidad en Cundinamarca</h2>
+            <div class="paramo-features">
+                <div class="feature2">
+                    <img src="img/sapore.jpeg" alt="">
+                    <h3>Anfibios</h3>
+                    <p>Se estima que en Cundinamarca habitan alrededor de 190 especies de anfibios, que incluyen diversas ranas, sapos, salamandras y cecilias. Estas especies se distribuyen en una variedad de hábitats acuáticos y terrestres, desde bosques hasta páramos y ríos.</p>
+                </div>
+                <div class="feature2">
+                    <img src="img/miquillo.jpeg" alt="">
+                    <h3>Mamiferos</h3>
+                    <p>Se calcula que en Cundinamarca habitan alrededor de 280 especies de mamíferos, que van desde grandes felinos como el puma y el jaguar hasta pequeños murciélagos y marsupiales. Estas especies ocupan una variedad de hábitats, incluyendo selvas, montañas, páramos y sabanas.</p>
+                </div>
+                <div class="feature2">
+                    <img src="img/chulero.jpeg" alt="Monitoreo y vigilancia">
+                    <h3>Aves</h3>
+                    <p>Cundinamarca es hogar de una diversidad excepcional de aves, con aproximadamente 900 especies registradas. Estas incluyen aves residentes, migratorias y endémicas, como colibríes, loros, águilas, pavas, y una gran variedad de especies de paseriformes.</p>
+                </div>
+                <div class="feature2">
+                    <img src="img/capitan.jpg" alt="Educación ambiental">
+                    <h3>peces</h3>
+                    <p>En cuanto a los peces de agua dulce, se estima que en Cundinamarca habitan alrededor de 250 especies. Estas incluyen una variedad de especies nativas y endémicas que habitan en ríos, quebradas, lagos y humedales del departamento.</p>
+                </div>
+            </div>
+        </div>
+    
+    
+ 
+
+    <div class="artists-section">
+        <div class="artists-container">
+            <div class="artists-list">
+                <h3>Fauna de  cundinamarca</h3>
+
+                <div class="highlight">
+                    
+                    <p>La fauna de Cundinamarca juega un papel fundamental en los ecosistemas del departamento. Los animales ayudan a controlar las poblaciones de otras especies, dispersan semillas, polinizan plantas y contribuyen al ciclo del agua. Además, la fauna es una fuente de alimento, ingresos y recreación para las comunidades locales..</p>
+                </div>
+                <h3 class="texto3">Amenazas</h3>
+                <p>Cundinamarca es hogar de varias especies endémicas, es decir, que solo se encuentran en este departamento. Algunas de estas especies son el mono chichero, la ranita de Bogotá y el colibrí zunzuncito.
+
+                    Desafortunadamente, también hay varias especies de fauna en Cundinamarca que se encuentran amenazadas por la pérdida de hábitat, la caza y la contaminación. Entre las especies más amenazadas se encuentran el cóndor de los Andes, el oso de anteojos y el pato de pico dorado</p>
+                <h3 class="texto3">Conservación</h3>
+                <p>La conservación de la fauna y sus hábitats es fundamental para proteger la biodiversidad única de Cundinamarca, La deforestación, la caza ilegal, el tráfico de especies y la contaminación ambiental amenazan la supervivencia de numerosas especies.</p>
+            </div>
+            <div class="artists-slider-content">
+                <button class="artists-prev">&#10094;</button>
+                <div class="artists-slides-fauna">
+                    <div class="artists-slide-fauna">
+                        <img src="slider/slider- fauna/7 .png" alt="">
+                        <h6>Foto: Kevin Schafer</h6>
+                    </div>
+                    <div class="artists-slide-fauna">
+                        <img src="slider/slider- fauna/8.png" alt="">
+                        <h6>Caminantes del retorno</h6>
+                    </div>
+                    <div class="artists-slide-fauna">
+                        <img src="slider/slider- fauna/9 .png" alt="">
+                       <h6></h6>
+                    </div>
+                    <div class="artists-slide-fauna">
+                        <img src="slider/slider- fauna/10 .png" alt="">
+                       <h6></h6>
+                    </div>
+                    <div class="artists-slide-fauna">
+                        <img src="slider/slider- fauna/11.png" alt="">
+                        <h6></h6>
+                    </div>
+                    <div class="artists-slide-fauna">
+                        <img src="slider/slider- fauna/12.png" alt="">
+                      <h6></h6>
+                    </div>
+                </div>
+                <button class="artists-next">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    <div class="artists-section2">
+        <div class="artists-container">
+            <div class="artists-list">
+              
+
+                
+             
+                <h3 class="texto3">Características</h3>
+                <p class="mensajes"> El oso andino o de anteojos es la única especie que vive actualmente de la subfamilia 
+                    Tremarctinae, la cual se originó en Norte América probablemente durante el mioceno medio, 
+                    hace 13 millones de años aproximadamente.</p>
+                    <br>
+                <p class="mensajes"> se 
+                    caracteriza por su pelaje negro, largo y grueso, y la presencia de manchas blanco-amarillentas 
+                    alrededor de los ojos, en el hocico y pecho, únicas para cada individuo, comparadas a la huella 
+                    digital. Es un plantígrado con garras no retractiles, de hábitos generalmente diurnos, con 
+                    dimorfismo sexual (machos más grandes que las hembras), alcanzando una altura entre 1.50 y 
+                    2.10 m erguido sobre sus extremidades posteriores y pesando de 90 hasta 180 Kg.</p>
+                <h3 class="texto3">Habitat</h3>
+                <p class="mensajes">Los osos andinos se encuentran adaptados a una gran variedad de condiciones ambientales a lo 
+                    largo de su distribución y rango altitudinal.</p>
+                <h3 class="texto3">Alimentacion</h3>
+                <p class="mensajes">Su dieta es altamente variada (Peyton 1980), entre los 
+                    componentes más importantes de su alimentación se encuentran las especies de la familia de las 
+                    bromelias, en especial el género Puya, las cuales son características del ecosistema de páramo</p>
+            </div>
+            <div class="artists-slider-content">
+               
+
+                 
+                    <div class="h2_paramos1">
+                      <h2  class="cedulas">Oso Anteojos</h2>
+                      <div class="card__image-holder flip">
+                        <div class="front" style="background-image: url('img/cedula_oso1.png');"></div>
+                        <div class="back" style="background-image: url('img/cedula_oso2.png');"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+          
+      
+    <section class="image-content">
+        <div class="image-container">
+            <img src="img/caimanero.png" alt="Biodiversidad">
+    
+        </div>
+    </section>    
+    <div class="artists-section2">
+        <div class="artists-container">
+            <div class="artists-list">
+              
+
+                
+             
+                <h3 class="texto3">Habitat</h3>
+                <p class="mensajes">El hábitat de C. acutus consiste principalmente en zonas costeras de agua salobre, como las secciones de 
+                    agua salada de los ríos, lagunas costeras y manglares. Sin embargo, se conocen poblaciones en áreas de 
+                    agua dulce ubicadas tierras adentro, incluidos varios embalses</p>
+                <h3 class="texto3">Características </h3>
+                <p class="mensajes">Posee un hocico no alargado, angosto y puntiagudo en individuos jóvenes, pero ancho en los machos 
+                    viejos; con una elevación o joroba preocular bastante pronunciada en la línea sagital del hocico de mayor 
+                    tamaño, que le confiere al cráneo una apariencia convexa en perfil lateral; los adultos poseen una verruga 
+                    lisa y puntiaguda en frente de cada ojo </p>
+                <h3 class="texto3">Dieta</h3>
+                <p class="mensajes">Todas las especies de cocodrilos actuales son carnívoras oportunistas (la caza puede ser activa o pasiva 
+                    de acecho), ya que comúnmente se alimentan (en tierra adentro o dentro del agua) de una amplia variedad 
+                    de presas vivas o hasta de carroña </p>
+            </div>
+            <div class="artists-slider-content">
+               
+
+                 
+                    <div class="h2_paramos1">
+                      <h2  class="cedulas">Caiman  aguja</h2>
+                      <div class="card__image-holder flip">
+                        <div class="front" style="background-image: url('img/caiman.png');"></div>
+                        <div class="back" style="background-image: url('img/caiman2.png');"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+          
+  
+     
+
+</body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="script.js"></script>
+<script src="experimentar.js"></script>
+    
+<footer >
+    <div class="osofooter"> 
+     <img src="img/o1.png" alt="Imagen 1"> 
+       </div>
+         <div class="footer-icons">
+           <a href="https://www.facebook.com" target="_blank"><img src="img/logo1.png" alt="Icono 1"></a>
+           <a href="https://www.instagram.com" target="_blank"><img src="img/logo2.png" alt="Icono 2"></a>
+           <a href="https://www.youtube.com" target="_blank"><img src="img/logo3.png" alt="Icono 3"></a>
+           <p class="footer-p">
+            &copy; 2024 Todos los derechos reservados
+            <br>
+   
+          </p>
+         </div>
+     </footer>
+
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script src="script.js"></script>
+
+
+</html>
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Esta es una página donde se habla de biodiversidad de Cundinamarca y Boyacá">
+    <title>Mapa municipios</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="probando.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+    <nav class="namenu">
+        <div id="logo">Biodiversidad</div>
+    
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <!-- First Tier Drop Down -->
+                <label for="drop-1" class="toggle">Boyacá</label>
+                <a href="#">Boyacá</a>
+                <input type="checkbox" id="drop-1"/>
+                <ul>
+                    <li><a href="paramosb.html">Páramo</a></li>
+                    <li><a href="faunab.html">Fauna</a></li>
+                    <li><a href="florab.html">Flora</a></li>
+                    <li><a href="mapa2.html">Mapa</a></li>
+                </ul>
+            </li>
+            <li>
+                <!-- First Tier Drop Down -->
+                <label for="drop-2" class="toggle">Cundinamarca</label>
+                <a href="#">Cundinamarca</a>
+                <input type="checkbox" id="drop-2"/>
+                <ul>
+                    <li><a href="paramosc.html">Páramo</a></li>
+                    <li><a href="faunac.html">Fauna</a></li>
+                    <li><a href="florac.html">Flora</a></li>
+                    <li><a href="mapa.html">Mapa</a></li>
+                </ul>
+            </li>
+            <li><a href="referencias.html">Referencias</a></li>
+            <li><a href="Mapai.html">Interactivo</a></li>
+        </ul>
+    </nav>
+
+    
+ <div class="slider-container">
+  <div class="slider">
+      <img src="slider/imagen/1.jpg" alt="Image 1">
+      <img src="slider/imagen/2.jpg" alt="Image 2">
+      <img src="slider/imagen/3.jpg" alt="Image 3">
+      <img src="slider/imagen/4.jpg" alt="Image 4">
+  </div>
+  <div class="slider-controls"></div>
+  <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+  <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+</div>
+    <section class="main-section2">
+      <div class="header-section">
+         <h2>Los  municipios de  Cundinamarca </h2>
+              <div class="mi-galeria">
+              <a data-fancybox="gallery" href="img/bogota.jpg" data-caption="Créditos:Bogota,Foto: Santiago Boada">
+                  <img src="img/bogota.jpg" alt="Imagen 1">
+              </a>
+              <a data-fancybox="gallery" href="img/chiajpg.jpg" data-caption="Turismo Chia.">
+                  <img src="img/chiajpg.jpg" alt="Imagen 2">
+              </a>
+              <a data-fancybox="gallery" href="img/zipaquira.jpg" data-caption="minas de sal - Zipaquirá ">
+                  <img src="img/zipaquira.jpg" alt="Imagen 3">
+              </a>
+              <a data-fancybox="gallery" href="img/cajica.jpg" data-caption="Estacion del tren Cajica">
+                  <img src="img/cajica.jpg" alt="Imagen 4">
+              </a>
+              <a data-fancybox="gallery" href="img/la mesa.jpeg" data-caption="Foto: David Páez">
+                  <img src="img/la mesa.jpeg" alt="Imagen 4">
+              </a>
+              <a data-fancybox="gallery" href="img/vilavicencio.jpg" data-caption="Foto:  Darlin Bejarano.">
+                  <img src="img/vilavicencio.jpg" alt="Imagen 4">
+              </a>
+          </div>
+          <h3 class="textoh3">Cundinamarca</h3>
+          <p> un departamento vibrante en el corazón de Colombia, te ofrece un sinfín de experiencias para cautivar todos tus sentidos. Hogar de la capital del país, Bogotá, Cundinamarca se alza como un destino turístico diverso, donde la historia, la cultura natural y la calidez de su gente se entrelazan para crear recuerdos inolvidables.</p>
+          <h3 class="texto3">está dividido en 116 municipios distribuidos en 15 provincias.</h3>
+          <p>  te enamora con sus diversos paisajes. Recorre los Altos de Zipaquirá, donde la sabana andina se extiende con imponencia. Aventúrate en el Parque Nacional Natural Chingaza, un ecosistema de páramo de gran biodiversidad. Relájate en las aguas termales de Suesca, o disfruta de un paseo en lancha por el Embalse de Neusa..</p>
+          
+      </div>
+  </section>
+
+
+
+<section>
+ 
+
+  <section class="main-section">
+    <div class="header-section">
+        <h2>Mapa de municipios de Cundinamarca</h2>
+          <select name="select-location" id="select-location">
+            <option value="-1">Seleccione un lugar:</option>
+            <option value="4.6097,-74.0817">Bogotá</option>
+            <option value="4.8594,-74.0331">Chía</option>
+            <option value="5.0219,-74.0024">Zipaquirá</option>
+            <option value=" 4.9167,-74.0167">Cajicá</option>
+            <option value="4.8143,-74.3637">Facatativá</option>
+            <option value="4.3057,-74.8010">Girardot</option>
+            <option value="4.6315,-74.4680">La Mesa</option>
+            <option value="4.7165,-74.2100">Funza</option>
+            <option value="4.5841,-74.2154">Soacha</option>
+            <option value="4.7345,-74.2714">Madrid</option>
+            
+          </select>
+          <div id="mapa"></div>
+    </div>
+        </section>
+
+
+  
+</section>
+
+
+
+
+
+</body>
+<section>
+  <footer >
+    <div class="osofooter">
+     <img src="img/o1.png" alt="Imagen 1">
+       </div>
+         <div class="footer-icons">
+          <a href="https://www.facebook.com"><img src="img/logo1.png" alt="Icono 1"></a>
+          <a href="https://www.instagram.com"><img src="img/logo2.png" alt="Icono 2"></a>
+          <a href="https://www.youtube.com"><img src="img/logo3.png" alt="Icono 3"></a>
+          
+
+             <p>© 2024 Todos los derechos reservados</p>
+       
+         </div>
+     </footer>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+     crossorigin=""></script>   		
+     <script src="mapa2.js"></script>
+     <script src="script.js"></script>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+     <script>
+       $(document).ready(function() {
+         $('[data-fancybox="gallery"]').fancybox({
+           // Opciones de Fancybox aquí
+         });
+       });
+     </script>
+     
+
+</section>        
+
+</html>           
+          
+             
+             

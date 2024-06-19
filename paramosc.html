@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Esta es una página donde se habla de biodiversidad de Cundinamarca y Boyacá">
+    <title>Páramos de Cundinamarca</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="probando.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+    <nav class="namenu">
+        <div id="logo">Biodiversidad</div>
+    
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <!-- First Tier Drop Down -->
+                <label for="drop-1" class="toggle">Boyacá</label>
+                <a href="#">Boyacá</a>
+                <input type="checkbox" id="drop-1"/>
+                <ul>
+                    <li><a href="paramosb.html">Páramo</a></li>
+                    <li><a href="florab.html">Flora</a></li>
+                    <li><a href="faunab.html">Fauna</a></li>
+                    <li><a href="mapa2.html">Mapa</a></li>
+                </ul>
+            </li>
+            <li>
+                <!-- First Tier Drop Down -->
+                <label for="drop-2" class="toggle">Cundinamarca</label>
+                <a href="#">Cundinamarca</a>
+                <input type="checkbox" id="drop-2"/>
+                <ul>
+                    <li><a href="paramosc.html">Páramo</a></li>
+                    <li><a href="faunac.html">Fauna</a></li>
+                    <li><a href="florac.html">Flora</a></li>
+                    <li><a href="mapa.html">Mapa</a></li>
+                </ul>
+            </li>
+            <li><a href="referencias.html">Referencias</a></li>
+            <li><a href="Mapai.html">Interactivo</a></li>
+        </ul>
+    </nav>
+    
+
+
+    <div class="slider-container">
+        <div class="slider">
+            <img src="slider/imagen/1.jpg" alt="Image 1">
+            <img src="slider/imagen/2.jpg" alt="Image 2">
+            <img src="slider/imagen/3.jpg" alt="Image 3">
+            <img src="slider/imagen/4.jpg" alt="Image 4">
+        </div>
+        <div class="slider-controls"></div>
+        <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <section class="main-section2">
+        <div class="header-section">
+           <h2>Páramo del Sumapaz</h2>
+                <div class="mi-galeria">
+                <a data-fancybox="gallery" href="img/galepa1.jpg" data-caption="Foto: Donaldo Zuluaga / Colprensa">
+                    <img src="img/galepa1.jpg" alt="Foto: Donaldo Zuluaga / Colprensa">
+                </a>
+                <a data-fancybox="gallery" href="img/galepa2.jpg" data-caption="Foto:  Colombia Trips / Civitatis">
+                    <img src="img/galepa2.jpg" alt="Imagen 2">
+                </a>
+                <a data-fancybox="gallery" href="img/galepa3.jpg" data-caption="">
+                    <img src="img/gale3.jpeg" alt="galepa3">
+                </a>
+                <a data-fancybox="gallery" href="img/galepa4.jpg" data-caption="foto:viewtravel.com">
+                    <img src="img/galepa4.jpg" alt="Imagen 4">
+                </a>
+                <a data-fancybox="gallery" href="img/galepa5.jpg" data-caption="Foto: Instituto Humboldt - Instituto Humboldt">
+                    <img src="img/galepa5.jpg" alt="Imagen 4">
+                </a>
+                <a data-fancybox="gallery" href="img/galepa6.jpeg" data-caption="Imagen: captura de pantalla Especies">
+                    <img src="img/galepa6.jpeg" alt="Imagen 4">
+                </a>
+            </div>
+            
+       <h3 class="textoh3">¿Sabías qué el páramo de  Sumapaz es?</h3>
+
+       <div class="p-paramos">
+       <h3 class="texto3"> Uno de  los  más grande del mundo.</h3>
+      
+       <div class="p-paramos">
+       <p>Está situado en la provincia del Sumapaz, en el departamento de Cundinamarca y la localidad de Sumapaz del Distrito Capital, en Colombia</p>
+    </div>
+       <h3 class="texto3">Ubicación y Extensión</h3>
+       <div class="p-paramos">
+       <p>Altitud: Se encuentra entre los 3,000 y 4,000 metros sobre el nivel del mar.
+        Superficie: Aproximadamente 178,000 hectáreas.
+        </p>
+       </div>
+        <div class="p-paramos">
+       <h3 class="texto3">Importancia  hidrológica y biodiversidad</h3>
+       <p>Es una de las fuentes hídricas más importantes del país. Dentro de su ecosistema habitan osos de anteojos, venados, águila y cóndores, además de otras especies.</p>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="card__image-holder">
+                    <img src="img/1.png" class="card__image">
+                </div>
+                <div class="card-title">
+                    <a href="#" class="toggle-info btn">
+                        <span class="left"></span>
+                        <span class="right"></span>
+                    </a>
+                    <h2>Páramo de Sumapaz</h2>
+                </div>
+                <div class="card-flap flap1">
+                    <div class="card-description">
+                        En el Parque Nacional Natural Sumapaz se encuentran representados dos de los principales ecosistemas de las montañas tropicales: el páramo y los bosques andinos.
+                    </div>
+                </div>
+            </div>
+           
+          
+        </div>
+       </div>
+        </div>
+    </section>
+
+    <section class="main-section3">
+        <div class="header-section">
+           <h2>Páramo de Chingaza</h2>
+                <div class="mi-galeria">
+                <a data-fancybox="gallery" href="img/galepac1.jpg" data-caption="Foto:Edimer Hernández">
+                    <img src="img/galepac1.jpg" alt="">
+                </a>
+                <a data-fancybox="gallery" href="img/osoc.jpg" data-caption="Foto:  Colombia Trips / Civitatis">
+                    <img src="img/osoc.jpg" alt="Imagen 2">
+                </a>
+                <a data-fancybox="gallery" href="img/galepac3.jpg" data-caption="Foto:divulgacion.minciencias.gov.co">
+                    <img src="img/galepac3.jpg" alt="galepa3">
+                </a>
+                <a data-fancybox="gallery" href="img/galepac4.jpg" data-caption="foto:divulgacion.minciencias.gov.co">
+                    <img src="img/galepac4.jpg" alt="Imagen 4">
+                </a>
+                <a data-fancybox="gallery" href="img/galepac5.jpg" data-caption="">
+                    <img src="img/galepac5.jpg" alt="Imagen 4">
+                </a>
+                <a data-fancybox="gallery" href="img/galepac6.jpg" data-caption="Imagen: Juan José Ibáñez">
+                    <img src="img/galepac6.jpg" alt="Imagen 4">
+                </a>
+            </div>
+            
+       <h3 class="texto3">¿Sabías qué el páramo de  Chingaza es?</h3>
+       <div class="p-paramos">
+
+       <p> Es reconocido por su alta diversidad biológica, albergando numerosas especies de plantas, aves, mamíferos, anfibios e insectos.</p>
+       </div>
+     
+       <h3 class="texto3">Ubicación y Extensión</h3>
+       <div class="p-paramos">
+       <p>Se encuentra ubicado en la cordillera Oriental en la región andina en Colombia.a altitud del parque varía entre los 800 y 4,020 metros sobre el nivel del mar, lo que permite la existencia de una gran diversidad de ecosistemas.</p>
+       </div>
+       <h3 class="texto3">Importancia  hidrológica</h3>
+       <div class="p-paramos">
+       <p>El parque es una fuente vital de agua para la región, incluyendo la ciudad de Bogotá y sus alrededores.
+        Alberga lagunas, humedales y ríos que son esenciales para el abastecimiento de agua potable y la regulación hídrica.</p>
+        </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="card__image-holder">
+                    <img src="img/2.png" class="card__image">
+                </div>
+                <div class="card-title">
+                    <a href="#" class="toggle-info btn">
+                        <span class="left"></span>
+                        <span class="right"></span>
+                    </a>
+                    <h2>Páramo de Chingaza</h2>
+                </div>
+                <div class="card-flap flap1">
+                    <div class="card-description">
+                        El Parque Nacional Natural Chingaza es otro importante ecosistema de páramo en Colombia, que también alberga una diversidad única de flora y fauna adaptadas a estas condiciones extremas.
+                    </div>
+                </div>
+            </div>
+            <h3 class="texto3">Gráfica de los Parámos oir área de Cundinamarca y Boyacá</h3>
+        </div>
+      
+    <div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>                <div id="bf5f7079-ea8b-43ad-8d38-e892092c5bad" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("bf5f7079-ea8b-43ad-8d38-e892092c5bad")) {                    Plotly.newPlot(                        "bf5f7079-ea8b-43ad-8d38-e892092c5bad",                        [{"domain":{"x":[0.0,1.0],"y":[0.0,1.0]},"hovertemplate":"ComplejoNombre=%{label}\u003cbr\u003eAreaHa=%{value}\u003cextra\u003e\u003c\u002fextra\u003e","labels":["P\u00e1ramo de Chingaza","P\u00e1ramo de Chingaza","P\u00e1ramo de Chingaza","P\u00e1ramo de Chingaza","P\u00e1ramo de Chingaza","P\u00e1ramo de Chingaza","P\u00e1ramo de Chingaza","P\u00e1ramo de Chingaza","P\u00e1ramo de Chingaza","P\u00e1ramo de Chingaza","P\u00e1ramo de Chingaza","P\u00e1ramo de Chingaza","P\u00e1ramo de Chingaza","Rabanal y r\u00edo Bogot\u00e1","Rabanal y r\u00edo Bogot\u00e1","Rabanal y r\u00edo Bogot\u00e1","Guerrero","Guerrero","Guerrero","Guerrero","Guerrero","Guerrero","Guerrero","Guerrero","Altiplano Cundiboyacense","Altiplano Cundiboyacense","Altiplano Cundiboyacense","Altiplano Cundiboyacense","Altiplano Cundiboyacense","Altiplano Cundiboyacense","Altiplano Cundiboyacense","Altiplano Cundiboyacense","Altiplano Cundiboyacense","Altiplano Cundiboyacense","Altiplano Cundiboyacense","Altiplano Cundiboyacense","Altiplano Cundiboyacense","Altiplano Cundiboyacense","Altiplano Cundiboyacense","Iguaque - Merch\u00e1n","Iguaque - Merch\u00e1n","Iguaque - Merch\u00e1n","Iguaque - Merch\u00e1n","Iguaque - Merch\u00e1n","Iguaque - Merch\u00e1n","Iguaque - Merch\u00e1n","Iguaque - Merch\u00e1n","Iguaque - Merch\u00e1n","Cruz Verde - Sumapaz","Cruz Verde - Sumapaz","Cruz Verde - Sumapaz","Cruz Verde - Sumapaz","Cruz Verde - Sumapaz","Cruz Verde - Sumapaz","Cruz Verde - Sumapaz"],"legendgroup":"","name":"","showlegend":true,"values":[11287.849924,983.80612984,561.46041497,563.77317794,312.45253007,72.70164291,10.25692011,945.95840096,493.00258208,1296.12344464,529.76706468,852.70587545,93756.9605941,11096.5483118,10030.0351418,3523.48026568,1251.74454095,144.54062081,307.67503148,1096.88003636,196.09036638,37078.2575902,3077.85028997,75.82178776,123.8336537,189.83100981,164.87293532,1075.13823336,206.54586042,113.59932677,209.57005886,82.09391895,248.64180651,191.31045137,142.58717407,156.31249641,1462.57141161,825.43147078,606.19251574,141.90333136,191.36486442,761.2163245,1560.27337523,3369.08307778,4209.87395928,2290.09203803,12667.1369564,1374.01960162,5155.26912745,232.64778449,398.90702263,46.02162882,135.00187519,308888.793586,209.10098742],"type":"pie"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"rgb(17,17,17)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#f2f5fa"},"error_y":{"color":"#f2f5fa"},"marker":{"line":{"color":"rgb(17,17,17)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#A2B1C6","gridcolor":"#506784","linecolor":"#506784","minorgridcolor":"#506784","startlinecolor":"#A2B1C6"},"baxis":{"endlinecolor":"#A2B1C6","gridcolor":"#506784","linecolor":"#506784","minorgridcolor":"#506784","startlinecolor":"#A2B1C6"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"line":{"color":"#283442"}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"marker":{"line":{"color":"#283442"}},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#506784"},"line":{"color":"rgb(17,17,17)"}},"header":{"fill":{"color":"#2a3f5f"},"line":{"color":"rgb(17,17,17)"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#f2f5fa","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#f2f5fa"},"geo":{"bgcolor":"rgb(17,17,17)","lakecolor":"rgb(17,17,17)","landcolor":"rgb(17,17,17)","showlakes":true,"showland":true,"subunitcolor":"#506784"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"dark"},"paper_bgcolor":"rgb(17,17,17)","plot_bgcolor":"rgb(17,17,17)","polar":{"angularaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"bgcolor":"rgb(17,17,17)","radialaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"},"yaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"},"zaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"}},"shapedefaults":{"line":{"color":"#f2f5fa"}},"sliderdefaults":{"bgcolor":"#C8D4E3","bordercolor":"rgb(17,17,17)","borderwidth":1,"tickwidth":0},"ternary":{"aaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"baxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"bgcolor":"rgb(17,17,17)","caxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""}},"title":{"x":0.05},"updatemenudefaults":{"bgcolor":"#506784","borderwidth":0},"xaxis":{"automargin":true,"gridcolor":"#283442","linecolor":"#506784","ticks":"","title":{"standoff":15},"zerolinecolor":"#283442","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#283442","linecolor":"#506784","ticks":"","title":{"standoff":15},"zerolinecolor":"#283442","zerolinewidth":2}}},"legend":{"tracegroupgap":0},"title":{"text":"Distribuci\u00f3n del \u00c1rea de P\u00e1ramos por Complejo","font":{"size":20,"color":"white","family":"Arial Black"},"y":0.9,"x":0.5,"xanchor":"center","yanchor":"top"},"font":{"size":16}},                        {"responsive": true}                    )                };                            </script>        </div>
+    </section>
+
+      
+
+ 
+
+    <section class="image-content">
+        <div class="image-container">
+            <img src="img/Humedales  .png" alt="Páramos">
+        </div>
+    </section>
+
+
+  
+            <h2 class="text-center">Los  humedales son Factor Clave para la  biodiversidad </h2> 
+        <div class="paramo-features">
+            <div class="feature2">
+                <img src="img/ecologico.jpg" alt="ecologico">
+                <h3>Importancia Ecológica</h3>
+                <p class="humedales">Los humedales de Cundinamarca son hábitats fundamentales para numerosas especies de aves, peces, mamíferos y plantas.
+                     Su biodiversidad contribuye a mantener el equilibrio natural del ecosistema y proporciona servicios ecosistémicos esenciales para las comunidades locales</p>
+            </div>
+            <div class="feature2">
+                <img src="img/recursoh.jpg" alt="Manejo sostenible del agua">
+                <h3>Recursos Hídricos</h3>
+                <p class="humedales">Estos humedales actúan como esponjas naturales, absorbiendo y filtrando el agua de lluvia, lo que ayuda a recargar los acuíferos subterráneos y a regular los caudales de los ríos. 
+                    Son vitales para garantizar el suministro de agua dulce para la agricultura, el consumo humano y otras actividades económicas.</p>
+            </div>
+            <div class="feature2">
+                <img src="img/garza.jpg" alt="Biodiversidad Aviar">
+                <h3>Biodiversidad Aviar</h3>
+                <p>Cundinamarca alberga una diversidad impresionante de aves acuáticas y migratorias que encuentran refugio y alimento en los humedales. 
+                    Estas aves, como los patos, garzas y flamencos, atraen a observadores de aves de todo el mundo y contribuyen al turismo sostenible en la región.</p>
+            </div>
+            <div class="feature2">
+                <img src="img/turismo.jpeg" alt="Educación ambiental">
+                <h3>Recreación y Turismo</h3>
+                <p>Además de su valor ecológico, los humedales de Cundinamarca ofrecen oportunidades excepcionales para actividades recreativas y turísticas. 
+                    Desde paseos en bote hasta observación de aves y caminatas naturales, estos espacios son un tesoro para aquellos que buscan conectarse con la naturaleza.</p>
+            </div>
+        </div>
+  
+        <section class="main-section3">
+            <div class="header-section">
+                <h2>Mapa de los páramos y  humedales de  Cundinamarca</h2>
+        <select name="select-location" id="select-location">
+            <option value="-1">Seleccione un páramo o humedal:</option>
+            <option value="4.9404,-73.7293">Páramo de Sumapaz</option>
+            <option value="4.6470,-74.1800">Páramo de Chingaza</option>
+            <option value="5.0187,-73.8889">Páramo de Guerrero</option>
+            <option value="5.1516,-73.8192">Páramo de Rabanal</option>
+            <option value="4.5709,-73.9260">Humedal La Conejera</option>
+            <option value="4.6762,-74.0480">Humedal Juan Amarillo</option>
+            <option value="4.6097,-74.0830">Humedal Santa María del Lago</option>
+        </select>
+    
+            </div>
+        
+            
+            <div id="mapa" style="width: 100%; height: 500px;"></div>
+        </section>
+
+  
+    <footer>
+        <div class="osofooter">
+            <img src="img/o1.png" alt="Imagen del oso de anteojos">
+        </div>
+        <div class="footer-icons">
+            <a href="https://www.facebook.com" target="_blank"><img src="img/logo1.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="img/logo2.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com" target="_blank"><img src="img/logo3.png" alt="YouTube"></a>
+        </div>
+        <p class="footer-p">
+            &copy; 2024 Todos los derechos reservados
+        </p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="mapapc.js"></script>
+    <script src="script.js"></script>
+  
+    <script>
+        $(document).ready(function () {
+            var zindex = 10;
+
+            $("div.card").click(function (e) {
+                e.preventDefault();
+
+                var isShowing = false;
+
+                if ($(this).hasClass("show")) {
+                    isShowing = true;
+                }
+
+                if ($("div.cards").hasClass("showing")) {
+                    $("div.card.show").removeClass("show");
+
+                    if (!isShowing) {
+                        $(this).css({ zIndex: zindex }).addClass("show");
+                    }
+
+                    zindex++;
+                } else {
+                    $("div.cards").addClass("showing");
+                    $(this).css({ zIndex: zindex }).addClass("show");
+                    zindex++;
+                }
+            });
+
+            $('#toggle').change(function () {
+                $('.navigation').toggle(this.checked);
+            });
+
+            $('.fa-bars').click(function () {
+                $('.menu').slideToggle();
+            });
+
+           
+            // Inicializar fancybox
+            $('[data-fancybox="gallery"]').fancybox({
+                transitionEffect: "slide",
+                buttons: [
+                    "zoom",
+                    "slideShow",
+                    "thumbs",
+                    "close"
+                ]
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+    

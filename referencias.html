@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
+  <meta name="description" content="Esta es una página donde se habla de biodiversidad de Cundinamarca y Boyacá">
+  <title>Referencias</title> 
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="namenu">
+        <div id="logo">Biodiversidad</div>
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <label for="drop-1" class="toggle">Boyacá</label>
+                <a href="#">Boyacá</a>
+                <input type="checkbox" id="drop-1"/>
+                <ul>
+                    <li><a href="paramosb.html">Páramo</a></li>
+                    <li><a href="faunab.html">fauna</a></li>
+                    <li><a href="florab.html">Flora</a></li>
+                    <li><a href="mapa2.html">Mapa</a></li>
+                </ul>
+            </li>
+            <li>
+                <label for="drop-2" class="toggle">Cundinamarca</label>
+                <a href="#">Cundinamarca</a>
+                <input type="checkbox" id="drop-2"/>
+                <ul>
+                    <li><a href="paramosc.html">Páramo</a></li>
+                    <li><a href="faunac.html">Fauna</a></li>
+                    <li><a href="florac.html">Flora</a></li>
+                    <li><a href="mapa.html">Mapa</a></li>
+                </ul>
+            </li>
+            <li><a href="referencias.html">Referencias</a></li>
+            <li><a href="Mapai.html">Interactivo</a></li>
+        </ul>
+    </nav>
+
+
+
+ 
+ <div class="slider-container">
+    <div class="slider">
+        <img src="slider/imagen/1.jpg" alt="Image 1">
+        <img src="slider/imagen/2.jpg" alt="Image 2">
+        <img src="slider/imagen/3.jpg" alt="Image 3">
+        <img src="slider/imagen/4.jpg" alt="Image 4">
+    </div>
+    <div class="slider-controls"></div>
+    <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+    <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+</div>
+
+
+
+<section>
+    <div class="caja-paramos">
+        <div class="caja3p">
+            <div class="contenedor-cedula">
+                <div class="container">
+                    <div class="h2_paramos1">
+                        <h2>Referencias</h2>
+                    </div>
+               
+                    <div class="enlace">
+                       <p class="titulo-referencias">Naturalista</p> 
+                        <a href="https://colombia.inaturalist.org/observations?photo_license=CC0&place_id=12749&taxon_id=47126" target="_blank">https://colombia.inaturalist.org/observations?photo_license=CC0&place_id=12749&taxon_id=47126</a>
+                       
+                          <div class="enlace">
+                          
+                            <p class="titulo-referencias">Corpo boyacá</p> 
+                        <a href="https://www.corpoboyaca.gov.co/" target="_blank">https://www.corpoboyaca.gov.co/</a>
+
+                        <div class="enlace">
+                          
+                            <p class="titulo-referencias">Datos abiertos de  Colombia </p> 
+                        <a href="https://www.datos.gov.co/" target="_blank">https://www.datos.gov.co/</a>
+
+                        <div class="enlace">
+                          
+                            <p class="titulo-referencias">Corporación Autonoma Regional  de Cundinamarca</p> 
+                        <a href="https://www.car.gov.co/" target="_blank">https://www.car.gov.co/</a>
+
+                        <h2>Textos</h2>
+                        <p>Corporación Autónoma Regional de Cundinamarca. 2018. Plan de manejo y conservación del Oso 
+                            Andino (Tremarctos ornatus) en la jurisdicción Car Cundinamarca. Bogotá D.C., Colombia, 47 pp.</p>
+                        <p>Corporación Autónoma Regional de Cundinamarca CAR.2023. Plan de Manejo y  Conservación de la especie Caimán Aguja (Crocodylus acutus) en 
+                            la jurisdicción de la  Corporación Autónoma Regional de  Cundinamarca CAR.  2023</p>
+                        <p>Humedales de  Cundinamarca..orporación Autónoma Regional de  Cundinamarca CAR.</p>
+                        
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    </div> 
+            </div>
+        </div>
+    </div>
+
+</section>      
+    <footer >
+        <div class="osofooter"> 
+         <img src="img/o1.png" alt="Imagen 1"> 
+           </div>
+             <div class="footer-icons">
+               <a href="https://www.facebook.com" target="_blank"><img src="img/logo1.png" alt="Icono 1"></a>
+               <a href="https://www.instagram.com" target="_blank"><img src="img/logo2.png" alt="Icono 2"></a>
+               <a href="https://www.youtube.com" target="_blank"><img src="img/logo3.png" alt="Icono 3"></a>
+              
+             </div>
+         </footer>
+    
+
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+         <script src="script.js"></script>
+         <script>
+            $(document).ready(function() {
+              // Función para abrir o cerrar el menú al hacer clic en el ícono de las barras
+              $('#menu-toggle').click(function() {
+                $('.menu').slideToggle();
+              });
+            });
+          </script>
+    
+     
+
+     
+       
+      
+</body>
+</html>

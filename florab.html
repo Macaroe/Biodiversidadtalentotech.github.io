@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Esta es una página donde se habla de biodiversidad de Cundinamarca y Boyacá">
+    <title>Flora de Cundinamarca</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="probando.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <nav class="namenu">
+        <div id="logo">Biodiversidad</div>
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop">
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <label for="drop-1" class="toggle">Boyacá</label>
+                <a href="#">Boyacá</a>
+                <input type="checkbox" id="drop-1">
+                <ul>
+                    <li><a href="paramosb.html">Páramo</a></li>
+                    <li><a href="florab.html">Flora</a></li>
+                    <li><a href="faunab.html">Fauna</a></li>
+                    <li><a href="mapa2.html">Mapa</a></li>
+                </ul>
+            </li>
+            <li>
+                <label for="drop-2" class="toggle">Cundinamarca</label>
+                <a href="#">Cundinamarca</a>
+                <input type="checkbox" id="drop-2">
+                <ul>
+                    <li><a href="paramosc.html">Páramo</a></li>
+                    <li><a href="faunac.html">Fauna</a></li>
+                    <li><a href="florac.html">Flora</a></li>
+                    <li><a href="mapa.html">Mapa</a></li>
+                </ul>
+            </li>
+            <li><a href="referencias.html">Referencias</a></li>
+            <li><a href="Mapai.html">Interactivo</a></li>
+        </ul>
+    </nav>
+    <div class="slider-container">
+        <div class="slider">
+            <img src="slider/imagen/1.jpg" alt="Image 1">
+            <img src="slider/imagen/2.jpg" alt="Image 2">
+            <img src="slider/imagen/3.jpg" alt="Image 3">
+            <img src="slider/imagen/4.jpg" alt="Image 4">
+        </div>
+        <div class="slider-controls"></div>
+        <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <section class="image-content">
+        <div class="image-container">
+        </div>
+    </section>
+
+    <div class="artists-section">
+        <div class="artists-container">
+            <div class="artists-list">
+                <h3>Flora de Boyacá</h3>
+
+                <div class="highlight">
+                    
+                    <p>
+                        Boyacá, tierra de imponentes paisajes y rica historia, también se enorgullece de albergar una flora diversa y exuberante. Sus páramos, bosques, valles y llanuras brindan el escenario perfecto para el desarrollo de una gran variedad de especies vegetales, conformando un tapiz vegetal de colores, texturas y aromas únicos.</p>
+                </div>
+                <h3 class="texto3">Pisos termicos</h3>
+                <p>Boyacá, debido a su variada topografía, presenta una gran diversidad de pisos térmicos, lo que se traduce en una amplia gama de ecosistemas y, por ende, de flora</p>
+                <h3 class="texto3">Tesoros Botánicos </h3>
+                <p>Boyacá alberga una gran cantidad de especies vegetales únicas y de gran importancia.
+
+                    Romería: Esta planta medicinal, utilizada para tratar diversas enfermedades, crece en los bosques altoandinos y secos de Boyacá.
+                    
+                    Quina: Un árbol de gran importancia histórica, ya que su corteza fue utilizada para producir la quinina, un medicamento que combatió la malaria en el pasado. Se encuentra en los bosques húmedos de Boyacá.
+                    
+                    Uva de monte: Un fruto comestible y apetecido por su sabor agridulce, que crece en los bosques húmedos y andinos del departamento.
+                    
+                    Flor de Incienso: Una hermosa flor blanca con aroma a incienso, que se encuentra en los páramos y bosques altoandinos.</p>
+            </div>
+            <div class="artists-slider-content">
+                <button class="artists-prev">&#10094;</button>
+                <div class="artists-slides-fauna">
+                    <div class="artists-slide-fauna">
+                        <img src="slider/slider flora/7.jpeg" alt="">
+                        <h6></h6>
+                    </div>
+                    <div class="artists-slide-fauna">
+                        <img src="slider/slider flora/8.jpg" alt="">
+                        <h6></h6>
+                    </div>
+                    <div class="artists-slide-fauna">
+                        <img src="slider/slider flora/9.jpeg" alt="">
+                       <h6></h6>
+                    </div>
+                    <div class="artists-slide-fauna">
+                        <img src="slider/slider flora/10.jpeg" alt="">
+                       <h6></h6>
+                    </div>
+                    <div class="artists-slide-fauna">
+                        <img src="slider/slider flora/11.jpeg" alt="">
+                        <h6></h6>
+                    </div>
+                    <div class="artists-slide-fauna">
+                        <img src="slider/slider flora/12.jpg" alt="">
+                      <h6></h6>
+                    </div>
+                </div>
+                <button class="artists-next">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="lightbox-gallery">
+        <img class="grid-item" src="img/trebol.jpeg" alt="Descripción de la imagen">
+      <img class="grid-item" src="img/gope.jpeg" alt="Descripción de la imagen">
+      <img class="grid-item" src="img/huevo.jpg" alt="Descripción de la imagen">
+      <img class="grid-item" src="img/raque.jpg" alt="Descripción de la imagen">
+      <img class="grid-item" src="img/comperia.jpg" alt="Descripción de la imagen">
+      <img class="grid-item" src="img/chicos espinos.jpg" alt="Descripción de la imagen">
+    </div> 
+    
+    <div class="paramo-section">
+        <h2>Flora en Boyacá</h2>
+        <div class="paramo-features">
+            <div class="feature">
+                <img src="img/joto.jpg" alt="Bosques Andinos, Foto: Sebastian Ramirez">
+                <h3 class>Páramos</h3>
+                <p class="mensajes">Boyacá alberga una gran extensión de páramos, que son ecosistemas únicos y vitales para la regulación hídrica. Aquí se encuentran especies adaptadas a las condiciones extremas, como el frailejón (Espeletia), el chuquiragua y el almohadón (Oreopolus).</p>
+            </div>
+            <div class="feature">
+                <img src="img/papas.jpg" alt="Bosques de niebla">
+                <h3>Cultivos</h3>
+                <p class="mensajes">Boyacá es conocida por su agricultura y sus extensos campos de cultivo. Se producen una variedad de cultivos, incluyendo papa, cebada, trigo, maíz, fresas, entre otros.</p>
+            </div>
+            <div class="feature">
+                <img src="img/ornamental.jpg" alt="Páramos y frailejones">
+                <h3>Plantas  ornamentales</h3>
+                <p class="mensajes">La región de Boyacá es famosa por su producción de plantas ornamentales, especialmente en municipios como Villa de Leyva. Aquí se cultivan una variedad de flores y plantas decorativas para el mercado nacional e internacional.</p>
+            </div>
+        </div>
+    </div>
+    <div class="sectionw">
+        <div class="image">
+            <img src="img/leche.jpg" alt="">
+        </div>
+        <div class="text">
+            <h2>¿Sabias qué?</h2>
+           
+            <h3>Boyacá un territorio privilegiado  para  la  produccion de leche </h3>
+            <p>Boyacá se destaca como uno de los departamentos colombianos con mayor tradición y potencial para la producción de leche. Sus tierras, clima y condiciones agropecuarias la convierten en una región apta para el desarrollo de esta actividad económica, fundamental para el abastecimiento nacional y la generación de empleo en las zonas rurales.
+
+                Factores que favorecen la producción de leche en Boyacá:
+                
+                Clima: El clima templado y frío de gran parte del territorio boyacense, especialmente en las zonas altoandinas, es ideal para el crecimiento de pastos, alimento principal del ganado vacuno.
+                
+                Suelos: Los suelos fértiles y ricos en nutrientes, producto de la actividad volcánica y la erosión natural, proporcionan los elementos necesarios para el desarrollo óptimo de las praderas.
+                
+                Topografía: Las ondulaciones del terreno y la presencia de valles y laderas facilitan el manejo del ganado y la distribución de pastos.
+                
+                Recursos hídricos: La abundancia de ríos, quebradas y nacimientos de agua garantiza el suministro de agua para el ganado y el riego de las pasturas.</p>
+        
+        </div>
+    </div>
+ 
+
+  
+    <section class="main-section">
+        <div class="header-section">
+           <h2>Gráfica de tierras para la producción de leche</h2>
+    
+
+           <div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+            <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>                <div id="87494871-bd5e-4248-b821-1e74efd6c552" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("87494871-bd5e-4248-b821-1e74efd6c552")) {                    Plotly.newPlot(                        "87494871-bd5e-4248-b821-1e74efd6c552",                        [{"alignmentgroup":"True","hovertemplate":"Departamento=Boyac\u00e1\u003cbr\u003eMunicipio=%{x}\u003cbr\u003e\u00c1rea (ha)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Boyac\u00e1","marker":{"color":"#636efa","pattern":{"shape":""}},"name":"Boyac\u00e1","offsetgroup":"Boyac\u00e1","orientation":"v","showlegend":true,"textposition":"auto","x":["Aquitania","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Cu\u00edtiva","Cu\u00edtiva","Aquitania","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Sogamoso","Aquitania","Aquitania","Aquitania","Aquitania","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Aquitania","Aquitania","Aquitania","Aquitania","Tota","Aquitania","Tota","Tota","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Sogamoso","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Cu\u00edtiva","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Tota","Cu\u00edtiva","Cu\u00edtiva","Tota","Sogamoso","Sogamoso","Sogamoso","Sogamoso","Sogamoso","Sogamoso","Tota","Tota","Tota","Tota","Tota","Tota","Cu\u00edtiva","Tota","Tota","Tota","Tota","Cu\u00edtiva","Tota","Tota","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Sogamoso","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Aquitania","Aquitania","Aquitania","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Cu\u00edtiva","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Sogamoso","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Sogamoso","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Aquitania","Sogamoso","Aquitania","Aquitania","Aquitania","Sogamoso","Sogamoso","Aquitania","Aquitania","Sogamoso","Sogamoso","Sogamoso","Sogamoso","Sogamoso","Sogamoso","Sogamoso"],"xaxis":"x","y":[0.0,0.02,1.65,0.01,207.77,1.89,70.4,84.59,0.0,0.01,0.02,0.0,0.0,0.0,43.31,0.07,8.13,0.0,0.0,0.0,70.09,0.17,0.41,0.04,26.46,7.32,296.33,0.03,0.0,0.03,1.68,1.42,0.1,0.3,0.0,0.0,0.01,0.03,1150.15,13.5,218.4,0.0,0.02,108.25,0.0,0.03,0.0,0.0,65.1,0.88,0.44,0.04,0.0,290.75,0.03,0.04,0.17,0.02,0.02,0.01,0.01,0.0,0.0,0.0,0.0,0.18,8.62,0.0,0.14,57.02,0.03,0.0,0.0,0.0,0.27,0.03,0.52,0.32,2.07,0.01,0.02,0.02,0.39,11.36,0.02,0.45,0.03,0.02,0.02,0.03,0.13,0.02,34.78,0.06,0.16,0.0,0.0,0.0,0.0,0.16,0.0,0.0,0.0,0.0,0.0,0.0,1.37,0.0,0.0,0.15,0.03,224.48,0.01,29.99,0.0,0.01,22.86,2.46,0.64,6.82,17.6,0.01,11.06,23.44,78.78,7.33,64.26,7.28,14.77,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,7.97,0.0,18.42,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.83,6.3,979.62,0.18,0.0,0.0,8.89,2.11,2.74,1.59,0.43,0.0,0.2,0.3,0.61,3.39,5.27,3.72,12.64,0.0,144.11,9.09,0.63,0.87,0.0,55.23,23.44,0.02,0.04,0.02,0.01,0.01,0.0,0.0,0.17,0.03,0.0,0.0,0.41,15.11,0.0,0.0,0.0,0.0,0.02,0.0,0.0,0.03,0.0,0.0,0.0,0.0,13.4,0.0,0.0,1.18,0.05,0.0,0.0,4.12,0.0,0.0,0.0,0.46,0.05,11.35,8.78,0.22,1.84,0.14,235.96,0.02,0.0,0.0,0.0,0.0,0.0,0.0,0.0,234.19,1.82,1.16,0.0,0.0,0.0,0.0,12.07,0.0,0.0,0.0,0.0,0.0,0.07,1678.29,8.7,0.0,0.0,0.0,0.0,0.0,21.85,0.0,8.41,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,6.92,384.19,0.25,1.83,1.19,0.07,0.54,0.0,4.17,3.57,4.66,32.23,0.71,7.15,0.51,0.13,55.68,0.27,13.0,27.03,3.52,9.9,0.01,32.0,0.01,273.34,1.27,0.1,0.03,0.35,0.0,4.4,5.85,0.01,6.58,0.77,1.42,0.06,0.04,0.01,14.77,5.67,0.18,3.24,0.0,16.33,0.25,1.0,1.25,613.62,13.35,0.06,0.07,1.28,0.11,0.0,0.32,8.64,0.0,0.0,14.28,0.22,0.0,0.0,0.03,0.0,0.0,0.0,0.0,14.05,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,21.89,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.06,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.25,0.01,0.07,242.05,1.06,0.06,0.06,0.0,8.28,160.4,13.65,10.68,0.05,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.45,0.0,0.0,0.99,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.31,0.0,0.0,0.0,0.0,0.0,0.0,0.03,0.12,0.0,0.11,0.0,0.03,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.81,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.17,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02,0.0,0.0,0.0,0.0,0.05,0.0,0.26,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.03,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.44,5.71,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.06,0.0,0.0,0.0,0.0,0.02,0.02,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,14.77,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,31.36,0.0,1.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.68,0.0,0.0,0.0,0.0,0.0,0.0,0.03,0.33,0.56,0.02,0.54,2.11,6.5,6.97,0.22,0.0,93.65,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,26.04,0.0,0.0,0.0,0.0,0.0,1.14,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02,0.0,1.82,0.0,0.0,0.0,0.0,0.0,0.0,0.0,30.71,0.54,0.0,0.47,0.0,0.0,0.0,1.02,0.0,0.0,0.02,71.24,3.57,19.66,0.26,6.85,0.08,8.43,0.44,5.24,0.15,2.31,2.98,0.02,1.22,0.03,1.3,0.02,0.06,0.01,2.56,1.32,0.02,0.01,0.32,2.69,1.78,17.18,0.06,0.79,0.36,5.25,4.83,0.05,1.91,7.16,18.22,0.36,0.05,3.76,0.02,0.1,0.0,22.69,8.43,8.51,0.0,0.0,39.22,0.81,5.99,0.13,14.66,21.03,39.18,9.4,0.0,781.1,15.39,0.06,5.98,33.38,0.1,50.81,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,10.16,12.35,18.66,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,95.79,7.78,0.01,26.32,0.35,48.36,46.94,7.51,3.77,33.53,2.98,0.0,12.05,30.9,0.98,33.07,548.35,164.78,16.55,0.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.06,0.0,0.39,7.39,0.1,463.44,677.83,2941.02,2.4,1.8,0.73,13.44,497.97,10.16,3.39,400.01,8.69,0.01,29.34,125.4,0.23,30.85,0.0,156.82,6.71,10.65,36.4,2.27,89.52,0.25,8.37,0.01],"yaxis":"y","type":"bar"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"rgb(17,17,17)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#f2f5fa"},"error_y":{"color":"#f2f5fa"},"marker":{"line":{"color":"rgb(17,17,17)","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#A2B1C6","gridcolor":"#506784","linecolor":"#506784","minorgridcolor":"#506784","startlinecolor":"#A2B1C6"},"baxis":{"endlinecolor":"#A2B1C6","gridcolor":"#506784","linecolor":"#506784","minorgridcolor":"#506784","startlinecolor":"#A2B1C6"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"line":{"color":"#283442"}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"marker":{"line":{"color":"#283442"}},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#506784"},"line":{"color":"rgb(17,17,17)"}},"header":{"fill":{"color":"#2a3f5f"},"line":{"color":"rgb(17,17,17)"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#f2f5fa","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#f2f5fa"},"geo":{"bgcolor":"rgb(17,17,17)","lakecolor":"rgb(17,17,17)","landcolor":"rgb(17,17,17)","showlakes":true,"showland":true,"subunitcolor":"#506784"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"dark"},"paper_bgcolor":"rgb(17,17,17)","plot_bgcolor":"rgb(17,17,17)","polar":{"angularaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"bgcolor":"rgb(17,17,17)","radialaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"},"yaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"},"zaxis":{"backgroundcolor":"rgb(17,17,17)","gridcolor":"#506784","gridwidth":2,"linecolor":"#506784","showbackground":true,"ticks":"","zerolinecolor":"#C8D4E3"}},"shapedefaults":{"line":{"color":"#f2f5fa"}},"sliderdefaults":{"bgcolor":"#C8D4E3","bordercolor":"rgb(17,17,17)","borderwidth":1,"tickwidth":0},"ternary":{"aaxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"baxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""},"bgcolor":"rgb(17,17,17)","caxis":{"gridcolor":"#506784","linecolor":"#506784","ticks":""}},"title":{"x":0.05},"updatemenudefaults":{"bgcolor":"#506784","borderwidth":0},"xaxis":{"automargin":true,"gridcolor":"#283442","linecolor":"#506784","ticks":"","title":{"standoff":15},"zerolinecolor":"#283442","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#283442","linecolor":"#506784","ticks":"","title":{"standoff":15},"zerolinecolor":"#283442","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Departamento"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"\u00c1rea (ha)"}},"legend":{"title":{"text":"Departamento"},"tracegroupgap":0},"title":{"text":"\u00c1rea de tierras por departamento y municipio","font":{"size":20,"color":"white","family":"Arial Black"},"y":0.9,"x":0.5,"xanchor":"center","yanchor":"top"},"barmode":"relative","font":{"size":16},"autosize":true},                        {"responsive": true}                    )                };                            </script>        </div>
+    
+    
+        </div>
+    </section>
+
+    <footer >
+        <div class="osofooter"> 
+         <img src="img/o1.png" alt="Imagen 1"> 
+           </div>
+             <div class="footer-icons">
+               <a href="https://www.facebook.com" target="_blank"><img src="img/logo1.png" alt="Icono 1"></a>
+               <a href="https://www.instagram.com" target="_blank"><img src="img/logo2.png" alt="Icono 2"></a>
+               <a href="https://www.youtube.com" target="_blank"><img src="img/logo3.png" alt="Icono 3"></a>
+               <p class="footer-p">
+                &copy; 2024 Todos los derechos reservados
+                <br>
+       
+              </p>
+             </div>
+         </footer>
+    
+
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+         <script src="script.js"></script>
+         <script src="experimentar.js"></script>
+
+     
+</body>
+</html>
