@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #004080;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            background-size: cover;
+            color: white;
+            position: relative;
+        }
+        li::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+        }
+        h2 {
+            margin: 0;
+            color: #ffffff;
+            position: relative;
+            z-index: 1;
+        }
+        p {
+            margin: 5px 0;
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Información del Clima</h1>
+    <ul>
+
+        <li style="background-image: url('https://example.com/imagen_bogota.jpg');">
+            <h2>Clima en Bogotá</h2>
+            <p>Temperatura: 10.73°C</p>
+            <p>Descripción: nubes dispersas</p>
+        </li>
+    
+        <li style="background-image: url('https://example.com/imagen_boyaca.jpg');">
+            <h2>Clima en Boyacá</h2>
+            <p>Temperatura: 6.43°C</p>
+            <p>Descripción: nubes dispersas</p>
+        </li>
+    
+    </ul>
+</body>
+</html>
